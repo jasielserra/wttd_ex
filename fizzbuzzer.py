@@ -26,16 +26,18 @@ def robot(pos):
 
     return say
 
+def assert_true(expr):
+    try:
+        assert expr
+    except AssertionError:
+        print(expr)
+
 if __name__ == '__main__':
     assert robot(1) == '1'
     assert robot(2) == '2'
     assert robot(4) == '4'
 
-    try:
-        assert robot(3) == 'fizz'
-    except AssertionError:
-        print('Falha na linha 36')
-        
+    assert_true(robot(3) == 'fizz')    
     assert robot(6) == 'fizz'
     assert robot(9) == 'fizz'
 
