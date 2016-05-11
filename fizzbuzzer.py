@@ -31,7 +31,11 @@ if __name__ == '__main__':
     assert robot(2) == '2'
     assert robot(4) == '4'
 
-    assert robot(3) == 'fizz'
+    try:
+        assert robot(3) == 'fizz'
+    except AssertionError:
+        print('Falha na linha 36')
+        
     assert robot(6) == 'fizz'
     assert robot(9) == 'fizz'
 
