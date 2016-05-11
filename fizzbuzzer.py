@@ -1,3 +1,13 @@
+'''
+Regras do Fizzbuzz
+
+1. Se a posição for múltipla de 3: fizz
+2. Se a posição for múltipla de 5: buzz
+3. Se a posição for múltipla de 3 e 5: fizzbuzz
+4. Para qualquer outra posição fale o próprio nº.
+
+'''
+
 from functools import partial
 
 multiple_of = lambda base, num: num % base == 0
