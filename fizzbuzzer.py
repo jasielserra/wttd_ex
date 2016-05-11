@@ -17,7 +17,7 @@ multiple_of_3 = partial(multiple_of, 3)
 def robot(pos):
     say = str(pos)
     
-    if multiple_of_3(pos) and multiple_of_5(pos):
+    if multiple_of_3(pos) or multiple_of_5(pos):
         say = 'fizzbuzz'
     elif multiple_of_5(pos):
         say = 'buzz'
