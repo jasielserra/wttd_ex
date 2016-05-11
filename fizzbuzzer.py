@@ -33,18 +33,18 @@ def assert_true(expr):
         print(expr)
 
 if __name__ == '__main__':
-    assert robot(1) == '1'
-    assert robot(2) == '2'
-    assert robot(4) == '4'
+    assert_true(robot(1) == '1')
+    assert_true(robot(2) == '2')
+    assert_true(robot(4) == '4')
 
     assert_true(robot(3) == 'fizz')    
-    assert robot(6) == 'fizz'
-    assert robot(9) == 'fizz'
+    assert_true(robot(6) == 'fizz')
+    assert_true(robot(9) == 'fizz')
 
-    assert robot(5) == 'buzz'
-    assert robot(10) == 'buzz'
-    assert robot(20) == 'buzz'
+    assert_true(robot(5) == 'buzz' )
+    assert_true(robot(10) == 'buzz')
+    assert_true(robot(20) == 'buzz')
 
-    assert robot(15) == 'fizzbuzz'
-    assert robot(30) == 'fizzbuzz'
-    assert robot(45) == 'fizzbuzz'
+    assert_true(robot(15) == 'fizzbuzz')
+    assert_true(robot(30) == 'fizzbuzz')
+    assert_true(robot(45) == 'fizzbuzz')
